@@ -28,6 +28,8 @@ jobs:
 
       - name: Update repository
         run: |
+          git config --global user.email "aleksander.baranowski@yahoo.pl"
+          git config --global user.name "Alex Baranowski"
           echo "Import lastest from main on master branch $(date)" > /tmp/commit-message
           git clone https://gitlab.alpinelinux.org/alpine/aports.git
           cd aports
