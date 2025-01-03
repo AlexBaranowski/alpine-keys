@@ -38,7 +38,7 @@ jobs:
           mv aports .. # move it as different repository
           git remote add aports ../aports
           git fetch aports
-          git merge --allow-unrelated-histories aports/master
+          git merge --allow-unrelated-histories --no-commit aports/master
           git remote remove aports
 
       - name: Set commit message
