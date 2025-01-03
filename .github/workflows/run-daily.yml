@@ -32,6 +32,7 @@ jobs:
           git clone https://gitlab.alpinelinux.org/alpine/aports.git
           cd aports
           git filter-repo --subdirectory-filter main/alpine-keys
+          cd .. # getting back to main repository
           mv aports .. # move it as different repository
           git remote add aports ../aports
           git fetch aports
